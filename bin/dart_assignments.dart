@@ -1,5 +1,20 @@
-import 'package:dart_assignments/dart_assignments.dart' as dart_assignments;
-
-void main(List<String> arguments) {
-  print('Hello world: ${dart_assignments.calculate()}!');
+void main() {
+//   final String name;
+//   name = 'some name';
+//   name = 'other name';
+   
+//    final 
+//   var list = [23,34,35,35];
+  
+//   final List<int> numberList;
+//   numberList = List.empty();
+//   numberList = list;
+//   numberList.add(12);
+//   numberList.add(23);
+// const
+// const List<int> numberList = [23];
+//   numberList = list;
+//   numberList = List.empty();
+//   numberList.add(12);
+//   numberList.add(23);
 }
