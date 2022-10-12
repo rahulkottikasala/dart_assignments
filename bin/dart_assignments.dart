@@ -1,5 +1,27 @@
-import 'package:dart_assignments/dart_assignments.dart' as dart_assignments;
+class InvalidPhoneNumberException implements Exception{}
 
-void main(List<String> arguments) {
-  print('Hello world: ${dart_assignments.calculate()}!');
+  bool? validPhoneNumber(String phone){
+    if (phone.length == 10){
+      print('sucessfully');
+      return true;
+    }else{
+      throw InvalidPhoneNumberException();
+    }
+  }
+
+
+
+
+void main(List<String> args) {
+  try {
+  validPhoneNumber('848322034');
+    
+  }
+  on InvalidPhoneNumberException catch(_){
+    print('invalid phone number');
+  }
+
+  catch (e) {
+    print(e);
+  }
 }
