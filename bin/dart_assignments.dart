@@ -1,32 +1,20 @@
-abstract class Animal {
-
-}
-
-// class Human extends Animal {
-//   void sayName(){
-//     print('Human say Name');
-//   }
-//   @override
-//   void sayHello() {
-//     print('sayHello human');
-//     // super.sayHello();
+import 'person.dart';
+// class Person {
+//   String? name;
+//   int age = 20;
+//   Person(String name, int age) {
+//     this.name = name;
+//     this.age = age;
 //   }
 // }
- mixin Type {
-  void say1 (){
-  print("animal1");
-}}
- mixin Type2 {
- void say2 (){
-  print("animal2");
- }
-}
 
-class Human with Type, Type2 {
 
-}
-void main () {
-  final human = Human();
-  human.say1();
-  human.say2();
+
+void main() {
+  final person = Person("John", 23);
+  // person.name = "John";
+
+  person.setAge = 40;
+  print(person.getAge());
+
 }
