@@ -1,5 +1,35 @@
-import 'package:dart_assignments/dart_assignments.dart' as dart_assignments;
+class A {
+  int a = 10;
+  void show(){
+    print("inside show");
+  }
+  // void disp();
+}
 
-void main(List<String> arguments) {
-  print('Hello world: ${dart_assignments.calculate()}!');
+
+mixin B {
+  int a = 10;
+  void view(){
+    print("inside view");
+  }
+}
+
+class C with B implements A {    //with A, B
+
+@override
+int a = 1;
+void classc(){
+    print("inside classc $a");
+  
+}
+@override
+  void show(){
+    print("inside show");
+  }
+}
+
+void main (){
+  C obj = C();
+  obj.show();
+
 }
